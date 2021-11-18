@@ -11,23 +11,23 @@
         <h1>Simple Interest Calculator</h1>
     </header>
 
-    <div class="container">
+    <div class="maindiv">
         <label id="error"></label>
         <label for="principal">Amount <input type="number" id="principal" required
       /></label>
-        <label class="threeGrid" for="rateRange">AmountRate
+        <label class="threeGrid" for="rateRange">Rate
         <input
           type="range"
           min="1"
-          max="100"
-          value="50"
+          max="20"
+          value="10.25"
           class="slider"
           step="0.25"
           id="rateRange"
         />
         <span id="liveValue"></span>
       </label>
-        <label for="years">No. of Years
+        <label for="years">Years
         <select id="years">
           <option value="1">1</option>
           <option value="2">2</option>
@@ -42,10 +42,10 @@
           <option value="11">11</option>
         </select>
       </label>
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute Interest</button>
         <div id="result"></div>
     </div>
-    <footer>&copy; Everyone Can Get Rich</footer>
+    <footer>&copy; This calculator belongs to Adeyemi Adeoye</footer>
 
     <script src="script.js"></script>
 </body>
