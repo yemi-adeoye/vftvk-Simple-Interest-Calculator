@@ -43,7 +43,9 @@ function compute() {
 
   output.innerHTML = `If you deposit <span class="highlight">${principal}</span><br>
   at an interest rate of <span class="highlight">${rate}%</span><br>
-  You will receive an amount of <span >${result.toFixed(2)}</span>, <br>
+  You will receive an amount of <span class="highlight">${result.toFixed(
+    2
+  )}</span>, <br>
   in the year <span class="highlight">${later}</span>`;
 }
 
