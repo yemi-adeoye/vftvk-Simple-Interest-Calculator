@@ -1,4 +1,48 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0%
+}
 
+header {
+    color: #ccc;
+    background-color: rgb(129, 88, 88);
+    border-bottom: 1px solid #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
 
+#error {
+    margin-top: 10px;
+    color: red;
+    display: block;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.h label {
+    display: block;
+}
+
+label {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+.threeGrid {
+    grid-template-columns: 3fr 8fr 1fr;
+}
+
+#years {
+    width: 10%
+}
