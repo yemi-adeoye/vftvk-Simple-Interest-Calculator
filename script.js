@@ -9,7 +9,7 @@ let error;
 
 function calculate(principal, rate, years) {
   console.log((rate / 100) ** 5);
-  return principal * (1 + rate / 100) ** years;
+  return principal * years * (rate / 100);
 }
 function compute() {
   var output = document.getElementById('result');
