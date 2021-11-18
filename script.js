@@ -19,6 +19,8 @@ function compute() {
   principal = Number(document.getElementById('principal').value);
   if (principal <= 0 || principal === '') {
     error.innerHTML = 'Please enter a valid amount';
+    alert('Please enter a valid amount');
+    document.getElementById('principal').focus();
     return;
   }
   years = Number(document.getElementById('years').value);
@@ -26,7 +28,9 @@ function compute() {
   // get the number of years and validate on errors
   years = document.getElementById('years').value;
   if (years <= 0 || years === '') {
+    alert('Please enter a valid number of years');
     error.innerHTML = 'Please enter a valid number of years';
+    document.getElementById('years').focus();
     return;
   }
   console.log(rate);
